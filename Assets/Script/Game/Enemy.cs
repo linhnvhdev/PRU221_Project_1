@@ -59,7 +59,11 @@ public class Enemy : MonoBehaviour
         StartCoroutine(BlinkRed());
         //Check if health is zero => destroy enemy
         if (health <= 0)
+        {
             Destroy(gameObject);
+            GameManager.instance.score.GainScore();
+        }
+            
     }
 
     IEnumerator BlinkRed()
@@ -81,6 +85,11 @@ public class Enemy : MonoBehaviour
         {
             detectedTower = collision.GetComponent<Tower>();
             attackOrder = StartCoroutine(Attack());
+        }
+
+        if(collision.tag == "EndLine")
+        {
+            GameManager.instance.health.LoseHealth();
         }
     }
 }

@@ -9,11 +9,13 @@ public class GameManager : MonoBehaviour
     public Spawner spawner;
     public HealthSystem health;
     public CurrencySystem currency;
+    public ScoreSystem score;
 
     void Start()
     {
         GetComponent<HealthSystem>().Init();
         GetComponent<CurrencySystem>().Init();
+        GetComponent<ScoreSystem>().Init();
 
         StartCoroutine(WaveStartDelay());
     }
@@ -24,6 +26,5 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(2f);
         //Start the enemy spawning
         GetComponent<EnemySpawner>().StartSpawning();
-    }  
-
+    }
 }

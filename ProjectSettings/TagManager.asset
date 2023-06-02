@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Tower
   - Out
+  - EndLine
   layers:
   - Default
   - TransparentFX
