@@ -129,3 +129,6 @@ MonoBehaviour:
   damage: 2
   prefab_shootItem: {fileID: 1282590824706437793, guid: fe40418dc67bc9d45a10a7f220170031, type: 3}
   interval: 1
+  enemyLayerMask:
+    serializedVersion: 2
+    m_Bits: 64

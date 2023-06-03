@@ -21,4 +21,6 @@ public class ScoreSystem : MonoBehaviour
         score++;
         txt_score.text = score.ToString();
     }
+
+
 }
