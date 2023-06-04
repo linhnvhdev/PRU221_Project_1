@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+   
 
 public class HealthSystem : MonoBehaviour
-{    
+{
+
     //The UI text for the health count
     public Text txt_healthCount;
     //The default value of the health count (used for init)
     public int defaultHealthCount;
     //Current health count
-    public int healthCount;    
-
+    public int healthCount;
+    public GameManagerScrip GameManager;
 
     //Init the health system (reset the health count)
     public void Init()
@@ -35,8 +37,11 @@ public class HealthSystem : MonoBehaviour
     {
         if(healthCount<1)
         {
+            GameManager.gameOver();
+
             Debug.Log("You lost");
             //Call some reset values and stop the game from the manager
         }
     }
+  
 }
