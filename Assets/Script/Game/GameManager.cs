@@ -15,8 +15,7 @@ public class GameManager : MonoBehaviour
     {
         GetComponent<HealthSystem>().Init();
         GetComponent<CurrencySystem>().Init();
-        GetComponent<ScoreSystem>().Init();
-
+        GetComponent<ScoreSystem>().Init();       
         StartCoroutine(WaveStartDelay());
     }
 

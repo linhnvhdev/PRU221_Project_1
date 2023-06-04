@@ -231,7 +231,7 @@ GameObject:
   - component: {fileID: 57830981}
   - component: {fileID: 57830980}
   - component: {fileID: 57830979}
-  - component: {fileID: 57830978}
+  - component: {fileID: 57830982}
   m_Layer: 5
   m_Name: OverScreen
   m_TagString: Untagged
@@ -260,22 +260,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &57830978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57830976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b79965e2bba9b5479c8cbefe19b7394, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  txt_healthCount: {fileID: 0}
-  defaultHealthCount: 0
-  healthCount: 0
-  GameManager: {fileID: 0}
 --- !u!114 &57830979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -334,9 +318,21 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 14
+  m_SortingLayerID: -1408968441
+  m_SortingOrder: 2
   m_TargetDisplay: 0
+--- !u!114 &57830982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57830976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff13db31ae2e72e4188c7cff629994e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &59904318
 GameObject:
   m_ObjectHideFlags: 0
@@ -5713,8 +5709,8 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 14
+  m_SortingLayerID: -1408968441
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &591578973
 RectTransform:
@@ -8387,6 +8383,7 @@ GameObject:
   - component: {fileID: 1669589382}
   - component: {fileID: 1669589384}
   - component: {fileID: 1669589386}
+  - component: {fileID: 1669589389}
   m_Layer: 0
   m_Name: _Scripts
   m_TagString: Untagged
@@ -8512,8 +8509,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   txt_score: {fileID: 219066936}
+  txt_highscore: {fileID: 53632467}
   defaultScore: 0
   score: 0
+--- !u!114 &1669589389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669589381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c0e215ed9707bf4786061222d11a46c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1709214237
 GameObject:
   m_ObjectHideFlags: 0
