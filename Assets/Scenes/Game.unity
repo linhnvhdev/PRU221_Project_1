@@ -4925,7 +4925,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1109273189}
         m_TargetAssemblyTypeName: GameOverScreen, Assembly-CSharp
-        m_MethodName: ExitButton
+        m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6256,7 +6256,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1928222347}
-        m_TargetAssemblyTypeName: GameManagerScrip, Assembly-CSharp
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: MenuButton
         m_Mode: 1
         m_Arguments:
@@ -6732,7 +6732,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1928222347}
-        m_TargetAssemblyTypeName: GameManagerScrip, Assembly-CSharp
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
         m_Arguments:
@@ -7526,7 +7526,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a565db99451a12e4680ed1885385666d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pauseMenuUI: {fileID: 601785155}
   gameOverUI: {fileID: 1109273188}
 --- !u!4 &1424275488
 Transform:
@@ -9219,11 +9218,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1928222342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a565db99451a12e4680ed1885385666d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7163811854e01fe408a9fb6a22f8f522, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 601785155}
-  gameOverUI: {fileID: 1109273188}
 --- !u!1 &1937350438
 GameObject:
   m_ObjectHideFlags: 0
