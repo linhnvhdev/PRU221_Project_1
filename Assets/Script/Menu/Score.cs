@@ -7,9 +7,9 @@ using UnityEngine;
 public class Score
 {
     public string date;
-    public string score;
+    public int score;
 
-    public Score(string date, string score)
+    public Score(string date, int score)
     {
         this.date = date;
         this.score = score;

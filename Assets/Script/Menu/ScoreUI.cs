@@ -13,7 +13,7 @@ public class ScoreUI : MonoBehaviour
         foreach (string line in lines)
         {
             string[] data = line.Split('-');
-            scoreManager.AddScore(new Score(data[0], data[1]));
+            scoreManager.AddScore(new Score(data[0], int.Parse(data[1])));
         }
         var scores = scoreManager.GetHighscores().ToArray();
         if (scores.Length < 5)
