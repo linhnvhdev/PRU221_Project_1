@@ -20,10 +20,7 @@ public class GameManagerScrip : MonoBehaviour
         {
             gameOver();
         }
-        else
-        {
-            Time.timeScale = 1.0f;  
-        }
+      
     }
     public void gameOver()
     {
