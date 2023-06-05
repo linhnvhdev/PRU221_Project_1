@@ -13,8 +13,7 @@ public class EnemySpawner : MonoBehaviour
     public List<Transform> spawnPoints;
     //Enemy spawn interval
     public float spawnInterval=2f;
-
-
+    private int enemyCount=0;
     public void StartSpawning()
     {
         //Call the spawn coroutine
@@ -38,7 +37,12 @@ public class EnemySpawner : MonoBehaviour
         //Randomize the spawn point 
         int randomSpawnPointID = Random.Range(0,spawnPoints.Count);
         //Instantiate the enemy prefab
-        GameObject spawnedEnemy = Instantiate(prefabs[randomPrefabID],spawnPoints[randomSpawnPointID]);        
+        GameObject spawnedEnemy = Instantiate(prefabs[randomPrefabID],spawnPoints[randomSpawnPointID]);
+        enemyCount++;
+        if(enemyCount % 5 == 0)
+        {
+            spawnInterval *= 0.9f;
+        }      
     }
 
 }
